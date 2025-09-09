@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.gradient-border {
+  background: linear-gradient(to right, white, #ff69b4, #ffb6c1);
+  border-radius: 30px;
+}
