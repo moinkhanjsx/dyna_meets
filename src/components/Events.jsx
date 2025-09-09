@@ -6,7 +6,7 @@ const Events = () => {
     '/e2/e2.png',
     '/e3/e3.png'
   ];
-  const extendedEventImages = [...eventImages, ...eventImages];
+  const extendedEventImages = Array.from({ length: 10 }, () => [...eventImages]).flat();
 
   return (
     <section id="events" className="py-24 px-8 md:px-12 lg:px-16 bg-gradient-to-b from-gray-900 via-black to-gray-900">

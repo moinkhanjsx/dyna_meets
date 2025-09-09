@@ -7,7 +7,7 @@ const Discography = () => {
     '/disco3/disco3.png',
     '/disco4/disco4.png'
   ];
-  const extendedPosters = [...posters, ...posters];
+  const extendedPosters = Array.from({ length: 10 }, () => [...posters]).flat();
 
   return (
     <section id="discography" className="py-10 px-8 md:px-8 lg:px-12 bg-gradient-to-b from-black via-gray-900 to-black">
